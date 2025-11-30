@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equinox Analytics | Global Market Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2250931776047846" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1C3D5A',   // Deep Blue
+              secondary: '#5A6F7A', // Slate Gray
+              accent: '#D9A441',    // Golden Amber
+              bg: '#F7F7F5',        // Off-White
+              text: '#212121',      // Charcoal
+              paper: '#ffffff',
+            },
+            fontFamily: {
+              serif: ['Lora', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            typography: (theme) => ({
+              DEFAULT: {
+                css: {
+                  color: theme('colors.text'),
+                  h1: { fontFamily: theme('fontFamily.serif'), color: theme('colors.primary') },
+                  h2: { fontFamily: theme('fontFamily.sans'), color: theme('colors.primary') },
+                  h3: { fontFamily: theme('fontFamily.sans'), color: theme('colors.secondary') },
+                  strong: { color: theme('colors.primary') },
+                  a: { color: theme('colors.primary'), '&:hover': { color: theme('colors.accent') } },
+                },
+              },
+            }),
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            background-color: #F7F7F5;
+            color: #212121;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F7F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #5A6F7A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1C3D5A;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-bg text-text font-sans antialiased selection:bg-accent selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>

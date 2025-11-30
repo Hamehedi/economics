@@ -1,0 +1,5 @@
+{
+  "name": "The Daily AI",
+  "description": "An editorial-style content generator that creates structured blog posts, data tables, and sidebar insights using the Gemini API.",
+  "requestFramePermissions": []
+}
